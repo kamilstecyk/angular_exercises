@@ -1,0 +1,12 @@
+header
+{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: green;
+}
+
+header h2 
+{
+    color: white;
+}

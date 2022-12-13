@@ -1,0 +1,12 @@
+div 
+{
+    width: 80vw;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+div:hover 
+{
+    cursor: pointer;
+}
