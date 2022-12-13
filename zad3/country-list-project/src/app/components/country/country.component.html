@@ -1,0 +1,4 @@
+<div class="country_wrapper" [style.background-color]="getColorOfCountryRow()" (click)="onNavigate($event)">
+    <h4>{{country_index + 1}}. {{country_name}}</h4>
+    <button class="button_styled" (click)="removeThisCountry()">Usun</button>
+</div>

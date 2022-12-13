@@ -1,0 +1,16 @@
+.country_wrapper
+{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.country_wrapper button 
+{
+    margin-left: 3rem;
+}

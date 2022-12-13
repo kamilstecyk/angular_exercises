@@ -1,0 +1,57 @@
+.contact_full_name
+{
+    color: purple;
+}
+
+.contact_container
+{
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    width: 45vw;
+    margin: 1rem;
+}
+
+.header_contact
+{
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    padding-bottom: 0.25rem;
+}
+
+.contact_btn
+{
+    background-color: crimson;
+    color: white;
+    margin: 0.75rem;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    padding: 0.25rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.contact_btn:hover 
+{
+    cursor: pointer;
+    background-color: white;
+    color: crimson;
+}
+
+.main_contact_content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_detail_wrapper
+{
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 25px;
+    width: 80%;
+    text-align: center;
+    padding: 0.25rem;
+    margin: 0.5rem;
+}

@@ -1,0 +1,18 @@
+<div class="contact_container">
+    <div class="header_contact">
+        <span class="contact_full_name">{{contact_data.full_name}}</span>
+    </div>
+    <div class="main_contact">
+        <div class="main_visibility_btn">
+            <button class="contact_btn" (click)="handle_click_on_details_visibility_btn()" >{{ show_details == true ? 'Hide Details' : 'Show Details' }}</button>
+        </div>
+        <div class="main_contact_content" *ngIf="show_details == true">
+            <div class="contact_detail_wrapper">
+                <strong>Phone number: </strong>{{contact_data.phone}}
+            </div>
+            <div class="contact_detail_wrapper">
+                <strong>Email: </strong>{{contact_data.email}}
+            </div>
+        </div>
+    </div>
+</div>

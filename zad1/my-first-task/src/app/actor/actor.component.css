@@ -1,0 +1,8 @@
+.actor-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    flex-direction: column; 
+}

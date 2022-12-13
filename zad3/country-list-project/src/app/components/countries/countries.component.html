@@ -1,0 +1,20 @@
+<main>
+    <div class="countries-card-header">
+        <h3>Moje ulubione kraje</h3>
+    </div>
+    <form>
+        <input class="input_styled" type="text" [(ngModel)]="inputed_country" name="country_input"/>
+        <button class="button_styled" (click)="add_country_btn_handler()">Dodaj Kraj</button>
+    </form>
+
+    <div *ngIf="countries.length > 0 then countries_container else nocountries"></div>
+    <ng-template class="countries" #countries_container> 
+        <app-country (deleteCountryEvent)="deleteCountryFromArray($event)" *ngFor="let country of countries,let i=index, let e = even" [country_name]="country" [country_index]="i" [index_is_even]="e"></app-country>
+    </ng-template>
+    <ng-template #nocountries>
+        <div class="no_countries">
+            Nie masz dodanych zadnych krajow!
+        </div>
+    </ng-template>
+
+</main>

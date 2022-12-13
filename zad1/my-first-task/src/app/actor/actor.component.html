@@ -1,0 +1,76 @@
+<style>
+    .actor-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        flex-direction: column; 
+        background-color: lightblue;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5rem;
+    }
+
+    .actor-container h2 
+    {
+        margin: 1rem;
+    }
+
+    .actor_form
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+
+    .actor_form input 
+    {
+        margin: 1rem;
+        width: 75%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .actor_form button
+    {
+        width: 40%;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .actor_form button:hover
+    {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+
+    [hidden] {
+        visibility: hidden;
+        }
+</style>
+
+<div class="actor-container" [ngStyle]="{'visibility': showActor ? 'visible' : 'hidden'}">
+    <h2>Name: {{input_actor_name}}</h2>
+    <h2>Surname: {{input_actor_surname}}</h2>
+    <h2>Best Film: {{input_actor_best_film}}</h2>
+</div>
+
+<div class="actor_form">
+    <input type="text" placeholder="Name" id="actor_name_input" [(ngModel)]="input_actor_name">
+    <input type="text" placeholder="Surname" id="actor_surname_input" [(ngModel)]="input_actor_surname">
+    <input type="text" placeholder="Title of the best film" id="actor_best_film_input" [(ngModel)]="input_actor_best_film">
+    <button (click)="submitActorDataAndShow($event)">Show Actor</button>
+    <button (click)="hideActor($event)" >Hide Actor</button>
+</div>
